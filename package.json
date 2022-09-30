@@ -1,0 +1,26 @@
+{
+  "name": "small-cup-bootstrap",
+  "version": "1.0.0",
+  "description": "bootstrap components using small-cup",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanlia/small-cup-bootstrap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fanlia/small-cup-bootstrap/issues"
+  },
+  "homepage": "https://github.com/fanlia/small-cup-bootstrap#readme",
+  "peerDependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.1",
+    "small-cup": "^0.1.9"
+  }
+}

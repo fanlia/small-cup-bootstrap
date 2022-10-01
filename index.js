@@ -10,7 +10,7 @@ const toast = (props = {}) => {
         content,
     } = props
 
-    const el = h('div', {
+    return h('div', {
         className: 'toast',
         attributes: {
             'role': 'alert',
@@ -32,7 +32,6 @@ const toast = (props = {}) => {
         h('div', { className: 'toast-body' }, content),
     ])
 
-    return new Toast(el)
 }
 
 const delay = (timeout = 1000) => new Promise(resolve => setTimeout(resolve, timeout))
@@ -54,8 +53,8 @@ const toastContainer = () => {
 
     const info = async (props) => {
 
-        const instance = toast(props)
-        const el = instance._element
+        const el = toast(props)
+        const instance = new Toast(el)
         container.appendChild(el)
         instance.show()
 
